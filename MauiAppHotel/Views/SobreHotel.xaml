@@ -68,7 +68,7 @@
             </VerticalStackLayout>
         </Frame>
 
-        <Button Text="Voltar" />
+        <Button Text="Avançar" Clicked="BtnAvancar_Clicked" />
 
     </VerticalStackLayout>
 </ContentPage>
