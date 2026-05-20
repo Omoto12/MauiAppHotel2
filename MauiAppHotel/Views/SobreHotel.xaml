@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreHotel"
+             Title="SobreHotel"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Sobre o Hotel"
+               FontFamily="CinzelSemiBold"
+               FontSize="50"
+               HorizontalTextAlignment="Center"
+               TextColor="{StaticResource Primary}" />
+
+        <Frame>
+            <VerticalStackLayout>
+            <Label Text="Objetivo"
+                 FontFamily="CinzelRegular"
+                 TextTransform="Uppercase"
+                 FontSize="Subtitle"
+                 TextColor="{StaticResource Primary}"
+                 HorizontalTextAlignment="Center" />
+
+            <Label Text="Proporcionar uma experiência inesquecível de hospedagem, combinando conforto, leveza e diversão com um atendimento customizado de acordo com seu gosto!"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Body"
+                       TextColor="{StaticResource Gray900}" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame>
+            <VerticalStackLayout>
+            <Label Text="Sobre o Sistema"
+                   FontFamily="CinzelRegular"
+                   TextTransform="Uppercase"
+                   FontSize="Subtitle"
+                   TextColor="{StaticResource Primary}"
+                   HorizontalTextAlignment="Center" />
+
+            <Grid RowDefinitions="Auto, Auto, Auto"
+                          ColumnDefinitions="*, *"
+                          RowSpacing="10">
+
+            <Label Grid.Row="0" Grid.Column="0"
+                               Text="Desenvolvedor:"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource Gray600}" />
+            <Label Grid.Row="0" Grid.Column="1"
+                               Text="Giovana Omoto"
+                               HorizontalOptions="End"
+                               TextColor="{StaticResource Primary}" />
+
+            <Label Grid.Row="1" Grid.Column="0"
+                               Text="Ano de Criação:"
+                               FontAttributes="Bold"
+                               TextColor="{StaticResource Gray600}" />
+            <Label Grid.Row="1" Grid.Column="1"
+                               Text="2026"
+                               HorizontalOptions="End"
+                               TextColor="{StaticResource Primary}" />
+
+            </Grid>
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar" />
+
+    </VerticalStackLayout>
+</ContentPage>
