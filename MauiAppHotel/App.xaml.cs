@@ -8,7 +8,7 @@ namespace MauiAppHotel
         {
             new Quarto()
             {
-                Descricao = "Suíte Super Luxo Estéticamente Raro só Existem 3 no Mundo",
+                Descricao = "Suíte Estéticamente Raro só Existem 3 no Mundo",
                 ValorDiariaAdulto = 650.0,
                 ValorDiariaCrianca = 300.0
             },
