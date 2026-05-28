@@ -69,6 +69,8 @@
         </Frame>
 
         <Button Text="Avançar" Clicked="BtnAvancar_Clicked" />
+        
+        <Button Text="Cadastrar" Clicked="BtnAvancarEvento_Clicked" />
 
     </VerticalStackLayout>
 </ContentPage>

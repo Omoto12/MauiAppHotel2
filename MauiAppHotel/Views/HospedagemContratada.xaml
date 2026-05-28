@@ -8,7 +8,7 @@
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Suíte Super Luxo"
+        <Label Text="{Binding QuartoSelecionado.Descricao}"
                TextColor="{StaticResource Primary}"
                FontFamily="CinzelSemiBold"
                FontSize="50"
@@ -18,12 +18,12 @@
             <HorizontalStackLayout>
                 
                 <HorizontalStackLayout>
-                    <Label Text="Adulto: "/>
+                    <Label Text="{Binding QntAdultos: }"/>
                     <Label Text="2" TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
-                    <Label Text="Crianças: "/>
+                    <Label Text="{Binding QntCriancas: }"/>
                     <Label Text="2" TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
 
@@ -38,9 +38,9 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out: "/>
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia: "/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="23/12/2006 "/>
-                <Label Grid.Row="1" Grid.Column="1" Text="06/01/2007 "/>
-                <Label Grid.Row="1" Grid.Column="2" Text="15"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"  TextColor="{StaticResource Primary}"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="{StaticResource Primary}"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" TextColor="{StaticResource Primary}"/>
             </Grid>
 
         </Frame>
@@ -48,7 +48,7 @@
         <Frame Margin="10">
             <HorizontalStackLayout>
                 <Label Text="Valor Total: "/>
-                <Label Text="R$ 1,350,00"/>
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" TextColor="{StaticResource Primary}"/>
             </HorizontalStackLayout>  
         </Frame>
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MauiAppHotel.Models
+﻿namespace MauiAppHotel.Models
 {
     public class Quarto
     {
