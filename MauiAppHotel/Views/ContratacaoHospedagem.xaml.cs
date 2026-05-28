@@ -30,19 +30,20 @@ public partial class ContratacaoHospedagem : ContentPage
                 QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
                 QntAdultos = Convert.ToInt32(stp_adultos.Value),
                 QntCrianca = Convert.ToInt32(stp_criancas.Value),
-                DataCheckIn = dtpck_checkin.Date,
-                DataCheckOut = dtpck_checkout.Date,
+                DataCheckIn = (DateTime)dtpck_checkin.Date,
+                DataCheckOut = (DateTime)dtpck_checkout.Date,
             };
 
             await Navigation.PushAsync(new SobreHotel(h));
         }
+        catch { }
     }
 
     private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
     {
         DatePicker elemento = sender as DatePicker;
 
-        DateTime data_selecionada_checkin = elemento.Date;
+        DateTime data_selecionada_checkin = (DateTime)elemento.Date;
 
         dtpck_checkout.MinimumDate = data_selecionada_checkin.AddDays(1);
         dtpck_checkout.MaximumDate = data_selecionada_checkin.AddYears(1);

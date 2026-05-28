@@ -8,7 +8,7 @@
         public int NumeroParticipantes { get; set; }
         public string Local { get; set; }
         public decimal CustoPorParticipante { get; set; }
-    }
+
 
     public int DuracaoDias
         {

@@ -33,7 +33,7 @@
                 <Label Grid.Row="4" Grid.Column="0" Text="Custo por Pessoa:" FontFamily="CinzelRegular" />
                 <Label Grid.Row="4" Grid.Column="1" Text="{Binding CustoPorParticipante, StringFormat='R$ {0:F2}'}" HorizontalOptions="End" />
 
-                <Label Grid.Row="5" Grid.Column="0" Text="Custo Total:"FontFamily="CinzelRegular"FontAttributes="Bold" FontSize="Medium" />
+                <Label Grid.Row="5" Grid.Column="0" Text="Custo Total: " FontFamily="CinzelRegular" />
                 <Label Grid.Row="5" Grid.Column="1" Text="{Binding CustoTotal, StringFormat='R$ {0:F2}'}" FontFamily="CinzelRegular" TextColor="{StaticResource Primary}" HorizontalOptions="End" />
 
             </Grid>
