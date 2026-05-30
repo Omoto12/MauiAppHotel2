@@ -16,15 +16,15 @@
 
         <Frame Margin="10">
             <HorizontalStackLayout>
-                
-                <HorizontalStackLayout>
-                    <Label Text="{Binding QntAdultos: }"/>
-                    <Label Text="2" TextColor="{StaticResource Primary}"/>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Adultos: " TextColor="{StaticResource Primary}"/>
+                    <Label Text="{Binding QntAdultos }"/>
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
-                    <Label Text="{Binding QntCriancas: }"/>
-                    <Label Text="2" TextColor="{StaticResource Primary}"/>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Crianças: " TextColor="{StaticResource Primary}"/>
+                    <Label Text="{Binding QntCrianca }"/>
                 </HorizontalStackLayout>
 
             </HorizontalStackLayout>

@@ -1,8 +1,11 @@
+using MauiAppHotel.Models;
+
 namespace MauiAppHotel.Views;
 
 public partial class HospedagemContratada : ContentPage
 {
-	public HospedagemContratada()
+
+    public HospedagemContratada()
 	{
 		InitializeComponent();
 	}

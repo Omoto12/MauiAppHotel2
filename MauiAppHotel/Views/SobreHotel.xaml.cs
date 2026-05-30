@@ -7,10 +7,10 @@ public partial class SobreHotel : ContentPage
 
     private Hospedagem hospedagemRecebida;
 
-    public SobreHotel(Hospedagem hospedagem)
+    public SobreHotel()
     {
         InitializeComponent();
-        hospedagemRecebida = hospedagem;
+        hospedagemRecebida = new Hospedagem();
     }
 
     private async void BtnAvancar_Clicked(object sender, EventArgs e)
