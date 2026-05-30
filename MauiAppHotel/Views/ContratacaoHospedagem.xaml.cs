@@ -36,7 +36,10 @@ public partial class ContratacaoHospedagem : ContentPage
 
             await Navigation.PushAsync(new SobreHotel(h));
         }
-        catch { }
+        catch (Exception ex) 
+        { 
+            await DisplayAlertAsync("Ops", ex.Message, "OK");
+        }
     }
 
     private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
